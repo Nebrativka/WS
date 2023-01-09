@@ -1,3 +1,19 @@
+/* добавить какой-то сброс html 3й вебинар */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  bottom: 0;
+}
+
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -14,8 +30,19 @@ body {
   color: var(--title-text-color);
 }
 
+.container {
+  outline: 1px solid tomato;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
