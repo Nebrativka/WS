@@ -1,4 +1,7 @@
 /* добавить какой-то сброс html 3й вебинар */
+img {
+  vertical-align: bottom;
+}
 
 *,
 *::before,
@@ -11,7 +14,6 @@ h2,
 h3,
 p {
   margin: 0;
-  bottom: 0;
 }
 
 :root {
@@ -31,7 +33,6 @@ body {
 }
 
 .container {
-  /* padding-top: 94px; */
   outline: 1px solid teal;
   width: 1200px;
   padding-left: 15px;
@@ -58,6 +59,12 @@ p {
 /* HEADER */
 
 .header-container {
+  outline: 1px solid teal;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   /* justify-content: space-between; */
   align-items: center;
@@ -267,38 +274,54 @@ p {
 
 /* PORTFOLIO */
 
+.btn-list {
+  display: flex;
+}
+
+.btn-item {
+  margin-right: 8px;
+}
+
+.portfolio .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
-.radio-btn:hover {
-  cursor: pointer;
-  color: var(--white);
-  background-color: var(--accent-color);
+
+.portfolio-item {
+  outline: 1px solid teal;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+
+.portfolio-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.portfolio-cont {
+  padding-left: 24px;
 }
 
 .portfolio-title {
+  /* outline: 1px solid tomato; */
+  margin-top: 20px;
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--title-text-color);
 }
 
 .portfolio-text {
+  /* outline: 1px solid tomato; */
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.88px;
+  line-height: 1.88;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-}
-
-.porfolio-hover {
-  display: none;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
-  color: var(--white);
-  background-color: var(--accent-color);
 }
