@@ -1,0 +1,45 @@
+// @use "./components/mixins";
+// .button {
+//   @include mixins.centeredFlex;
+// }
+// @use "mixins";
+%btn {
+  display: inline-flex;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 0;
+  padding: 10px 20px;
+  background-color: #fff;
+  margin-left: 10px;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  border: solid 3px green;
+  min-height: 30px;
+  min-width: 90px;
+  // @include mixins.centeredFlex(inline-flex);
+}
+
+.primery {
+  @extend %btn;
+}
+
+.secondary {
+  @extend %btn;
+  margin-left: 10px;
+}
+
+// $icons: "facebook", "github", "mailRU", "twitter";
+
+// @mixin generateIcons($iconList) {
+//   @each $iconName in $icons {
+//     .icon-#{$iconName} {
+//       background-color: teal;
+//     }
+//   }
+// }
+
+// @include generateIcons($icons);
+
+%list {
+}

@@ -1,0 +1,17 @@
+$color-text-primary: #757575;
+$color-text-title: #212121;
+$color-accent: #2196f3;
+$white: #ffffff;
+$gray: #afb1b8;
+
+//данные для расширения
+a {
+  text-decoration: none;
+  color: var(--title-text-color);
+}
+
+%list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

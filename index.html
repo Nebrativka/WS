@@ -13,7 +13,7 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
@@ -26,45 +26,51 @@
                 <ul class="site-nav list">
                     <li class="nav-item"><a href="" class="link">Студия</a></li>
                     <li class="nav-item"><a href="./portfolio.html" class=" link">Портфолио</a></li>
-                    <li class="nav-item"><a href="" class="link">Контакты</a></li>
+                    <li class="nav-item"><a href="./test.html" class="link">Контакты</a></li>
                 </ul>
             </nav>
 
             <ul class="list contact-list">
-                <li class="cnt-item"><a href="mailto:info@devstudio.com" class="cnt-link">info@devstudio.com</a></li>
-                <li class="cnt-item"><a href="tel:+380961111111" class="cnt-link">+38 096 111 11 11</a></li>
+                <li class="cnt-item"><svg class="mail" width="16" height="10.85">
+                        <use href="./img/sprite.svg#mail"></use>
+                    </svg><a href="mailto:info@devstudio.com" class="cnt-link">info@devstudio.com</a>
+                </li>
+                <li class="cnt-item"><a href="tel:+380961111111" class="cnt-link"><svg class="phone" width="10"
+                            height="14.94">
+                            <use href="./img/sprite.svg#phone"></use>
+                        </svg>+38 096 111 11 11</a></li>
             </ul>
         </div>
 
     </header>
     <main>
         <!-- HERO -->
-        <section>
+        <section class="overlay">
             <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
             <button type="button" class="btn">Заказать услугу</button>
         </section>
         <!-- benefits -->
         <section class="benefits">
             <div class="container">
-                <ul class="list benefits-list">
-                    <li class="item">
+                <ul class="benefits-list">
+                    <li class="benefits-item ant">
                         <h3 class="advantage-title">Внимание к деталям</h3>
                         <p class="advantage-text">Идейные соображения, а также начало повседневной работы по
                             формированию
                             позиции.</p>
                     </li>
-                    <li class="item">
+                    <li class="benefits-item clock">
                         <h3 class="advantage-title">Пунктуальность</h3>
                         <p class="advantage-text">Задача организации, в особенности же рамки и место обучения кадров
                             влечет
                             за собой.</p>
                     </li>
-                    <li class="item">
+                    <li class="benefits-item diagram">
                         <h3 class="advantage-title">Планирование</h3>
                         <p class="advantage-text"> Равным образом консультация с широким активом в значительной степени
                             обуславливает.</p>
                     </li>
-                    <li class="item">
+                    <li class="benefits-item astronaut">
                         <h3 class="advantage-title">Современные технологии</h3>
                         <p class="advantage-text">Значимость этих проблем настолько очевидна, что реализация плановых
                             заданий.</p>
@@ -143,12 +149,24 @@
             <div class="container">
                 <h2 class="title">Постоянные клиенты</h2>
                 <ul class="list">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li><svg width="44.27" height="49.23">
+                            <use href="./img/sprite.svg#logo1"></use>
+                        </svg></li>
+                    <li><svg width="40" height="52">
+                            <use href="./img/sprite.svg#logo2"></use>
+                        </svg></li>
+                    <li><svg width="41" height="42.6">
+                            <use href="./img/sprite.svg#logo3"></use>
+                        </svg></li>
+                    <li><svg width="44.27" height="49.23">
+                            <use href="./img/sprite.svg#logo4"></use>
+                        </svg></li>
+                    <li><svg width="44.27" height="49.23">
+                            <use href="./img/sprite.svg#logo5"></use>
+                        </svg></li>
+                    <li><svg width="88.48" height="45.44">
+                            <use href="./img/sprite.svg#logo6"></use>
+                        </svg></li>
                 </ul>
             </div>
         </section>

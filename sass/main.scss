@@ -1,0 +1,53 @@
+// @use "./components/test";
+// @import "./components/test";
+// @import "./utils/mixins";
+@import "./utils/breakpoints";
+@import "./utils/variables";
+
+@import "./components/page-header";
+@import "./components/hero";
+
+// .button {
+//   @include mixins.centeredFlex(flex);
+// }
+
+.container {
+  outline: 1px solid teal;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 1200px;
+  }
+}
+
+.benefits-list {
+  @extend %list;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+.benefits-item {
+  text-align: center;
+  // font-size: 32px;
+  @media screen and (min-width: 768px) {
+    width: 50%;
+    // flex-basis: 50%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+  }
+}
